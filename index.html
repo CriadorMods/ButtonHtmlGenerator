@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e2d494fafb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.webp">
+    <title>Button Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2 i class="fa-brands fa-html5 fa-beat fa-xl" style="color: #df5858;"></i> 
+                   Button Generator
+        </h2>
+        <div>
+            <label for="btn-text">Button Text:</label>
+            <input type="text" id="btn-text" placeholder="Enter button text">
+        </div>
+        <div>
+            <label for="btn-color">Button Color:</label>
+            <input type="color" id="btn-color" value="#007bff">
+        </div>
+        <div>
+            <label for="btn-hover-color">Button Hover Color:</label>
+            <input type="color" id="btn-hover-color" value="#0056b3">
+        </div>
+        <div>
+            <label for="btn-size">Button Size (px):</label>
+            <input type="number" id="btn-size" min="10" max="50" step="1" value="16">
+        </div>
+        <div>
+            <label for="border-width">Border Width (px):</label>
+            <input type="number" id="border-width" min="0" max="10" step="1" value="0">
+        </div>
+        <div>
+            <label for="border-style">Border Style:</label>
+            <select id="border-style">
+                <option value="solid">Solid</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
+                <option value="groove">Groove</option>
+            </select>
+        </div>
+        <div>
+            <label for="border-color">Border Color:</label>
+            <input type="color" id="border-color" value="#000000">
+        </div>
+        <div>
+            <label for="border-radius">Border Radius (px):</label>
+            <input type="number" id="border-radius" min="0" max="50" step="1" value="0">
+        </div>
+        <div>
+            <label for="font-family">Font Family:</label>
+            <select id="font-family">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Helvetica, sans-serif">Helvetica</option>
+                <option value="Times New Roman, serif">Times New Roman</option>
+                <option value="Courier New, monospace">Courier New</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+            </select>
+        </div>
+        <div>
+            <label for="font-weight">Font Weight:</label>
+            <select id="font-weight">
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+                <option value="bolder">Bolder</option>
+                <option value="lighter">Lighter</option>
+            </select>
+        </div>
+        <div>
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color" value="#ffffff">
+        </div>
+        <div>
+            <label for="text-align">Text Alignment:</label>
+            <select id="text-align">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+        </div>
+        <div>
+            <label for="text-decoration">Text Decoration:</label>
+            <select id="text-decoration">
+                <option value="none">None</option>
+                <option value="underline">Underline</option>
+                <option value="overline">Overline</option>
+                <option value="line-through">Line Through</option>
+            </select>
+        </div>
+        <div>
+            <label for="text-shadow">Text Shadow (e.g., 1px 1px 2px rgba(0, 0, 0, 0.5)):</label>
+            <input type="text" id="text-shadow" placeholder="Enter text shadow">
+        </div>
+        <div>
+            <label for="letter-spacing">Letter Spacing (px):</label>
+            <input type="number" id="letter-spacing" min="0" max="10" step="0.1" value="0">
+        </div>
+        <div>
+            <label for="line-height">Line Height:</label>
+            <input type="number" id="line-height" min="0" max="3" step="0.1" value="1">
+        </div>
+        <div>
+            <label for="font-size">Font Size (px):</label>
+            <input type="number" id="font-size" min="10" max="50" step="1" value="16">
+        </div>
+        <div>
+            <label for="text-transform">Text Transform:</label>
+            <select id="text-transform">
+                <option value="none">None</option>
+                <option value="uppercase">Uppercase</option>
+                <option value="lowercase">Lowercase</option>
+                <option value="capitalize">Capitalize</option>
+            </select>
+        </div>
+        <div>
+            <label for="cursor">Cursor Type:</label>
+            <select id="cursor">
+                <option value="pointer">Pointer</option>
+                <option value="default">Default</option>
+                <option value="text">Text</option>
+                <option value="crosshair">Crosshair</option>
+                <option value="move">Move</option>
+                <option value="wait">Wait</option>
+                <option value="help">Help</option>
+            </select>
+        </div>
+        <div>
+            <label for="box-shadow">Box Shadow (e.g., 5px 5px 5px rgba(0, 0, 0, 0.5)):</label>
+            <input type="text" id="box-shadow" placeholder="Enter box shadow">
+        </div>
+        <div>
+            <label for="padding">Padding (px):</label>
+            <input type="number" id="padding" min="0" max="50" step="1" value="10">
+        </div>
+        <div>
+            <label for="margin">Margin (px):</label>
+            <input type="number" id="margin" min="0" max="50" step="1" value="5">
+        </div>
+        <div>
+            <label for="opacity">Opacity:</label>
+            <input type="range" id="opacity" min="0" max="1" step="0.1" value="1">
+        </div>
+        <div>
+            <label for="transition-duration">Transition Duration (s):</label>
+            <input type="number" id="transition-duration" min="0" max="10" step="0.1" value="0.3">
+        </div>
+        <div>
+            <label for="position">Position:</label>
+            <select id="position">
+                <option value="static">Static</option>
+                <option value="relative">Relative</option>
+                <option value="absolute">Absolute</option>
+                <option value="fixed">Fixed</option>
+            </select>
+        </div>
+        <div>
+            <label for="top">Top (px):</label>
+            <input type="number" id="top" min="0" max="500" step="1" value="0">
+        </div>
+        <button id="generate-btn">Generate Button</button>
+        <h3>Generated HTML & CSS Code:</h3>
+        <div id="button-preview"></div>
+    </div>
+
+    <script src="scripts.js" ></script>
+
+</body>
+</html>
+
+
+
+
+
