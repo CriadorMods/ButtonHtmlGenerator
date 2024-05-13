@@ -25,41 +25,44 @@ document.getElementById('generate-btn').addEventListener('click', function() {
     var transitionDuration = document.getElementById('transition-duration').value + 's';
     var position = document.getElementById('position').value;
     var top = document.getElementById('top').value + 'px';
+    var href = document.getElementById('href').value; // New line to get href value
 
     var buttonPreview = document.getElementById('button-preview');
     buttonPreview.innerHTML = `
-        <button id="preview-btn" style="
-            background-color: ${btnColor};
-            font-size: ${btnSize}px;
-            border-width: ${borderWidth};
-            border-style: ${borderStyle};
-            border-color: ${borderColor};
-            border-radius: ${borderRadius};
-            font-family: ${fontFamily};
-            font-weight: ${fontWeight};
-            color: ${textColor};
-            text-align: ${textAlign};
-            text-decoration: ${textDecoration};
-            text-shadow: ${textShadow};
-            letter-spacing: ${letterSpacing};
-            line-height: ${lineHeight};
-            font-size: ${fontSize};
-            text-transform: ${textTransform};
-            cursor: ${cursor};
-            box-shadow: ${boxShadow};
-            padding: ${padding};
-            margin: ${margin};
-            opacity: ${opacity};
-            transition: background-color ${transitionDuration}, color ${transitionDuration};
-            position: ${position};
-            top: ${top};
-        ">
-            ${btnText}
-        </button>
+        <a href="${href}">
+            <button id="preview-btn" style="
+                background-color: ${btnColor};
+                font-size: ${btnSize}px;
+                border-width: ${borderWidth};
+                border-style: ${borderStyle};
+                border-color: ${borderColor};
+                border-radius: ${borderRadius};
+                font-family: ${fontFamily};
+                font-weight: ${fontWeight};
+                color: ${textColor};
+                text-align: ${textAlign};
+                text-decoration: ${textDecoration};
+                text-shadow: ${textShadow};
+                letter-spacing: ${letterSpacing};
+                line-height: ${lineHeight};
+                font-size: ${fontSize};
+                text-transform: ${textTransform};
+                cursor: ${cursor};
+                box-shadow: ${boxShadow};
+                padding: ${padding};
+                margin: ${margin};
+                opacity: ${opacity};
+                transition: background-color ${transitionDuration}, color ${transitionDuration};
+                position: ${position};
+                top: ${top};
+            ">
+                ${btnText}
+            </button>
+        </a>
         <br>
         <br>
         <code>
-            &lt;button style="
+            &lt;a href="${href}"&gt;&lt;button style="
                 background-color: ${btnColor};
                 font-size: ${btnSize}px;
                 border-width: ${borderWidth};
@@ -86,7 +89,7 @@ document.getElementById('generate-btn').addEventListener('click', function() {
                 top: ${top};
             "&gt;<br>
             &nbsp;&nbsp;${btnText}<br>
-            &lt;/button&gt;
+            &lt;/button&gt;&lt;/a&gt;
         </code>
     `;
 
